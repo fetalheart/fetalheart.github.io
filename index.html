@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Begin Jekyll SEO tag v2.5.0 -->
-  <title>Cayman theme | Cayman is a clean, responsive theme for GitHub Pages.</title>
+  <title>MED-IITM</title>
   <meta name="generator" content="Jekyll v3.8.5">
   <meta property="og:title" content="Cayman theme">
   <meta property="og:locale" content="en_US">
@@ -24,13 +24,38 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="style.css">
   </head>
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
 <body>
     <a id="skip-to-content" href="https://pages-themes.github.io/cayman/#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
       <h1 class="project-name">MED-IITM</h1>
       <h2 class="project-tagline">Early detection of fetal heart conditions</h2>
-      <h2 class="project-tagline">Paricipated institutions</h2>
+      <h2 class="project-tagline">Participated institutions</h2>
 
         <a href="https://www.iitm.ac.in/" class="btn">IIT Madras</a>
         <a href="http://www.mediscansystems.org/" class="btn">Mediscan</a>
@@ -43,20 +68,28 @@
       <h1 id="header-1">About</h1>
 
 <p>Fetal cardiac anomalies are common, with half of them being lethal or 
-  requiring complex surgeries. Early detection of these anomalies enables early referral to ter-
-  tiary care centers with adequate expertise. A routine antenatal ultrasound performed between
+  requiring complex surgeries. Early detection of these anomalies enables early referral to 
+  tertiary care centers with adequate expertise. A routine antenatal ultrasound performed between
   18 and 22 weeks enables detection of most of these malformations. Further comprehensive
   evaluation can be performed with a dedicated fetal echocardiography, particularly in 
   high risk pregnancies and in cases with extracardiac anomalies</p>
 
 <h2 id="header-2">Main idea</h2>
-
 <blockquote>
-  <p>Major classfication plane view</p>
-  <p><img src="/images/4C.jpg" ></p>
-  <p><img src="/images/lvot.jpg" ></p>
-  <p><img src="/images/rvot.jpg" ></p>
-  <p><img src="/images/3vv.jpg" ></p>
+    <div class="row">
+        <div class="column">
+          <img src="/images/4C.jpg" alt="Four Chamber" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="/images/lvot.jpg" alt="Left ventricular outflow tract" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="/images/rvot.jpg" alt="Right ventricular outflow tract" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="/images/3vv.jpg" alt="Three vessel view" style="width:100%">
+          </div>
+    </div>
 
   <p></p>
 </blockquote>

@@ -65,7 +65,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="header-1">Importance!!</h1>
+      <h1 id="header-1">Importance</h1>
 
 <p>Fetal cardiac anomalies are common, with half of them being lethal or 
   requiring complex surgeries. Early detection of these anomalies enables early referral to 
@@ -75,6 +75,13 @@
   high risk pregnancies and in cases with extracardiac anomalies</p>
 
 <h2 id="header-2">Main idea</h2>
+<h2 id="header-2">Overview of proposed Net</h2>
+<p> Our proposed network architecture, ultraNET is inpsired by VGG16, while tuning few final layers changes to optimize to network for ROI and detection</p>
+<h3 id="header-3">(1). Fetal Heart plane classfication</h3>
+<p> Train the respective(4C, 3V, RVOT, LVOT)saliency maps throughout the source of target DICOM series(Either video or image) to find the class</p> 
+<h3 id = "header-3">(2). Fetal Cardiac Anomalies </h3>
+<p> Using the CNN backward pass from class localisation, compare the class with anamoly saliency maps(Ex: VSD, Atrial septam defect)</p>
+<p>Note: Need more septal and atrial defect images to get more consistant accuracy</p>
 <blockquote>
     <div class="row">
         <div class="column">
